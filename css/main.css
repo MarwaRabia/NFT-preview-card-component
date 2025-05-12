@@ -170,7 +170,7 @@ body {
   font-size: 20px;
   text-align: center;
   position: absolute;
-  bottom: 3px;
+  bottom: 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
