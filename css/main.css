@@ -1,0 +1,177 @@
+* {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+}
+
+:root {
+
+}
+
+
+body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: hsl(217, 54%, 11%);
+          color: white;
+          margin: 50px auto;
+}
+
+
+.container {
+          background-color: hsl(216, 50%, 16%);
+          padding: 20px;
+          border-radius: 15px ;
+          -webkit-border-radius: 15px ;
+          -moz-border-radius: 15px ;
+          -ms-border-radius: 15px ;
+          -o-border-radius: 15px ;
+          font-family: Arial, Helvetica, sans-serif;
+          /* box-shadow: 5px 20px 13px hsl(216deg 45.82% 14.58% / 40%); */
+          box-shadow: 5px 20px 13px hsl(217, 54%, 11%)
+          
+}
+
+.container .image-container {
+          position: relative;
+}
+.container .image-container img {
+          max-width: 100%;
+
+          border-radius: 15px ;
+          -webkit-border-radius: 15px ;
+          -moz-border-radius: 15px ;
+          -ms-border-radius: 15px ;
+          -o-border-radius: 15px ;
+
+}
+.container .image-container .overlay {
+          position: absolute;
+          inset: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          background-color: hsl(178, 100%, 50%);
+          border-radius: 10px;
+
+}
+
+.container .image-container:hover .overlay  {
+          cursor: pointer;
+          opacity: .5;
+}
+.container .image-container:hover .view  {
+          display: block;
+}
+.container .image-container .view {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          -webkit-transform: translate(-50%,-50%);
+          -moz-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+          -o-transform: translate(-50%,-50%);
+          display: none;
+}
+
+@media (min-width : 360px){
+          .container {
+                    width: 375px;
+          }
+}
+
+.container h2 {
+          font-family: Arial, Helvetica, sans-serif;
+          margin-top: 20px;
+          margin-bottom: 20px;
+
+          
+}
+
+
+.container h2:hover {
+          cursor: pointer;
+          color: hsl(178, 100%, 50%);
+}
+.container p {
+          color: hsl(215, 51%, 70%);
+          
+}
+
+.container .text {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+}
+
+.container .text .t {
+          display: flex;
+}
+
+.container .text .t p {
+          margin-left: 10px;
+}
+.container .text .t1 p {
+          color: hsl(178, 100%, 50%);
+}
+
+
+.container hr {
+          margin-top: 30px;
+          
+           border-color:#8ba4c45e;
+}
+
+.container .user {
+          display: flex;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          align-items: center;
+          
+}
+.container .user img {
+          width: 40px;
+          border-radius: 50%;
+          border: 1px solid white;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+}
+.container .user p {
+          margin-left: 10px;
+}
+ 
+.container .user p  span { 
+          color: white;
+}
+
+.container .user p  span:hover { 
+          color: hsl(178, 100%, 50%);
+          cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
